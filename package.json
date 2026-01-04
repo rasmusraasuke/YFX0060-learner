@@ -1,7 +1,7 @@
 {
   "name": "yfx0060-learner",
   "version": "1.0.0",
-  "description": "A flashcard learning application",
+  "description": "A YFX0060 exam learning application",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
