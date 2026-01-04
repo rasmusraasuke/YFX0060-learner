@@ -1,7 +1,10 @@
 import express, { Express } from 'express';
 import cors from 'cors';
 import path from 'path';
+import dotenv from 'dotenv';
 import flashcardRoutes from './routes/flashcards';
+
+dotenv.config();
 
 const app: Express = express();
 const PORT = process.env.PORT || 3000;

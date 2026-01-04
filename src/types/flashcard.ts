@@ -8,3 +8,8 @@ export interface FlashcardSession {
   cards: Flashcard[];
   currentIndex: number;
 }
+
+export interface AnswerCheckResult {
+  state: 'correct' | 'partially_correct' | 'incorrect';
+  description: string;
+}

@@ -162,6 +162,9 @@
                 }
 
                 const card = flashcards[currentIndex];
+                const submitBtn = document.getElementById("submit-btn");
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Kontrollin...";
 
                 try {
                     const response = await fetch("/api/check-answer", {
@@ -176,14 +179,20 @@
                     const result = await response.json();
                     userAnswers[currentIndex] = {
                         answer: answerText,
-                        isCorrect: result.isCorrect,
+                        state: result.state,
+                        description: result.description,
                         correctAnswer: result.correctAnswer,
                     };
 
                     displayFeedback(userAnswers[currentIndex]);
                 } catch (error) {
                     console.error("Error checking answer:", error);
-                    alert("Vastuse Kontrollimisel läks midagi valesti. Proovi uuesti.");
+                    alert(
+                        "Vastuse Kontrollimisel läks midagi valesti. Proovi uuesti.",
+                    );
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Esita Vastus";
                 }
             }
 
@@ -191,17 +200,27 @@
                 const feedback = document.getElementById("feedback");
                 feedback.classList.remove("hidden");
 
-                if (result.isCorrect) {
+                if (result.state === "correct") {
                     feedback.innerHTML = `
                     <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded">
                         <p class="font-bold">✓ Õige!</p>
-                        <p>Hea töö! Su vastus oli õige.</p>
+                        <p class="mt-2">${result.description}</p>
+                    </div>
+                `;
+                } else if (result.state === "partially_correct") {
+                    feedback.innerHTML = `
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded">
+                        <p class="font-bold">⚠ Pooleldi õige</p>
+                        <p class="mt-2">${result.description}</p>
+                        <p class="mt-2"><strong>Sinu vastus:</strong> ${result.answer}</p>
+                        <p class="mt-1"><strong>Õige vastus:</strong> ${result.correctAnswer}</p>
                     </div>
                 `;
                 } else {
                     feedback.innerHTML = `
                     <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded">
-                        <p class="font-bold">✗ Vale vastus</p>
+                        <p class="font-bold">✗ Vale</p>
+                        <p class="mt-2">${result.description}</p>
                         <p class="mt-2"><strong>Sinu vastus:</strong> ${result.answer}</p>
                         <p class="mt-1"><strong>Õige vastus:</strong> ${result.correctAnswer}</p>
                     </div>
