@@ -1,0 +1,822 @@
+[
+  {
+    "id": 1,
+    "question": "Liikuva keha kohavektor, tema koordinaadid. Kohavektori moodul, nihkevektor.",
+    "answer": "Kohavektor kirjeldab keha asukohta koordinaadistikus, tema koordinaadid on x, y, z. Kohavektori moodul on |r| = √(x² + y² + z²). Nihkevektor on Δr = r₂ - r₁."
+  },
+  {
+    "id": 2,
+    "question": "Liikuva keha kiirusvektor ja kiirendusvektor. Nende projektsioonide arvutamine ajaliste tuletiste abil.",
+    "answer": "Kiirusvektor v = dr/dt, kiirendusvektor a = dv/dt = d²r/dt². Projektsioonid: vₓ = dx/dt, vᵧ = dy/dt, vz = dz/dt; aₓ = dvₓ/dt, aᵧ = dvᵧ/dt, az = dvz/dt."
+  },
+  {
+    "id": 3,
+    "question": "Kiirusvektori projektsioonide ja koordinaatide arvutamine integraali abil.",
+    "answer": "vₓ = ∫aₓdt, vᵧ = ∫aᵧdt, vz = ∫azdt. Koordinaadid: x = ∫vₓdt, y = ∫vᵧdt, z = ∫vzdt."
+  },
+  {
+    "id": 4,
+    "question": "Tuletage ühtlaselt muutuva liikumise valemid projektsioonides.",
+    "answer": "v = v₀ + at, s = v₀t + at²/2, v² = v₀² + 2as. Projektsioonides: vₓ = v₀ₓ + aₓt, x = x₀ + v₀ₓt + aₓt²/2."
+  },
+  {
+    "id": 5,
+    "question": "Kirjutage kaldu horisondiga visatud keha liikumisvõrrandid x- ja z-telje sihis. Tehke joonis selgitustega.",
+    "answer": "x = v₀cos(α)·t, z = v₀sin(α)·t - gt²/2. x-telje sihis liikumine on ühtlane, z-telje sihis aeglustuv (üles) või kiirenev (alla)."
+  },
+  {
+    "id": 6,
+    "question": "Tuletage valemid kaldu horisondiga visatud keha lennuaja, lennukauguse ja -kõrguse arvutamiseks.",
+    "answer": "Lennuaeg: T = 2v₀sin(α)/g. Lennukaugus: L = v₀²sin(2α)/g. Lennukõrgus: H = v₀²sin²(α)/(2g)."
+  },
+  {
+    "id": 7,
+    "question": "Kirjutage klassikaline kiiruste liitmise valem vektorkujul ja projektsioonides ning valem summaarse kiiruse mooduli leidmiseks.",
+    "answer": "Vektorkujul: v = v' + u. Projektsioonides: vₓ = v'ₓ + uₓ. Moodul: |v| = √(vₓ² + vᵧ² + vz²)."
+  },
+  {
+    "id": 8,
+    "question": "Ühtlase sirgjoonelise liikumise ja inertsiaalsüsteemi definitsioonid.",
+    "answer": "Ühtlane sirgjooneline liikumine: kiirus on konstantne (a = 0). Inertsiaalsüsteem: taustsüsteem, kus kehtib Newtoni I seadus."
+  },
+  {
+    "id": 9,
+    "question": "Erirelatiivsusteooria 2 postulaati.",
+    "answer": "1) Füüsikaseadused on samad kõikides inertsiaalsüsteemides. 2) Valguse kiirus vaakumis on konstantne (c ≈ 3×10⁸ m/s) kõikides inertsiaalsüsteemides."
+  },
+  {
+    "id": 10,
+    "question": "Liikuva keha omapikkuse definitsioon ja arvutusvalem (tuletamiseta) koos selgitustega.",
+    "answer": "Omapikkus l₀ on pikkus kehaga kaasliikuvas süsteemis. Liikuv keha on lühem: l = l₀√(1 - v²/c²)."
+  },
+  {
+    "id": 11,
+    "question": "Liikuva keha omaaja definitsioon ja arvutusvalem (tuletamiseta) koos selgitustega.",
+    "answer": "Omaaeg τ on aeg kehaga kaasliikuvas süsteemis. Liikuvas süsteemis aeg aeglustub: t = τ/√(1 - v²/c²)."
+  },
+  {
+    "id": 12,
+    "question": "Relativistlik kiiruste liitmise seadus valemi kujul (tuletamata) paralleelsete ja ristuvate kiiruste korral. Selle järeldused.",
+    "answer": "Paralleelsed: v = (v₁ + v₂)/(1 + v₁v₂/c²). Ristuvad: v = √(v₁² + v₂²(1 - v₁²/c²))/(1 + v₁v₂/c²). Järeldus: kiirus ei saa ületada valguse kiirust."
+  },
+  {
+    "id": 13,
+    "question": "Newtoni I seadus.",
+    "answer": "Keha jääb paigale või liigub ühtlaselt sirgjooneliselt, kui resultantjõud on null või kui jõud puudub."
+  },
+  {
+    "id": 14,
+    "question": "Inertsi, massi ja massiühiku definitsioonid, tiheduse valem.",
+    "answer": "Inertsus: keha võime säilitada liikumisseisundit. Mass: inertsi mõõt. Ühik: kilogramm (kg). Tihedus: ρ = m/V."
+  },
+  {
+    "id": 15,
+    "question": "Newtoni II seadus, valem selgitustega.",
+    "answer": "Keha kiirendus on võrdeline mõjuva jõuga ja pöördvõrdeline massiga: F = ma või a = F/m."
+  },
+  {
+    "id": 16,
+    "question": "Jõu, resultantjõu ja jõuühku definitsioonid.",
+    "answer": "Jõud: keha vastasmõju mõõt. Resultantjõud: kõigi kehale mõjuvate jõudude vektorsumma. Ühik: njuuton (N), 1 N = 1 kg·m/s²."
+  },
+  {
+    "id": 17,
+    "question": "Newtoni III seadus.",
+    "answer": "Kehade vastasmõju jõud on võrdsed ja vastassuunalised: F₁₂ = -F₂₁."
+  },
+  {
+    "id": 18,
+    "question": "Inertsijõu definitsioon ja valem selgitustega.",
+    "answer": "Inertsijõud tekib mitteinertsiaalsüsteemis. Valem: Fᵢ = -ma₀, kus a₀ on süsteemi kiirendus."
+  },
+  {
+    "id": 19,
+    "question": "Kesktõukejõu valem selgitustega, näited kesktõukejõu kohta.",
+    "answer": "Fₖ = mv²/r = mω²r. Suunatud pöörlemiskeskpunktist eemale. Näited: vesi pöörleval pulgal, vesi tsentrifuugis."
+  },
+  {
+    "id": 20,
+    "question": "Seisumassi definitsioon. Liikuva keha massi arvutamise valem selgitustega, selle 2 järeldust.",
+    "answer": "Seisumass m₀: mass paigalseisvas süsteemis. Liikuv: m = m₀/√(1 - v²/c²). Järeldused: 1) mass kasvab kiirusega; 2) v < c."
+  },
+  {
+    "id": 21,
+    "question": "Hõõrdejõu põhjused ja arvutusvalem. Hõõrdejõu suund.",
+    "answer": "Põhjused: pindade ebaühtlus ja molekulidevahelised jõud. Valem: Fₕ = μN. Suund: liikumisele vastupidine."
+  },
+  {
+    "id": 22,
+    "question": "Keha kaldpinnal püsimise tingimuse tuletamine. Joonis selgitustega.",
+    "answer": "Keha püsib, kui mg·sin(α) ≤ μ·mg·cos(α), st tan(α) ≤ μ. Jõud: raskusjõud, toereaktsioon, hõõrdejõud."
+  },
+  {
+    "id": 23,
+    "question": "Laminaarse voolamise definitsioon. Joonis. Takistusjõu sõltuvus kiirusest.",
+    "answer": "Laminaarne voolamine: vedeliku kihid libisevad üksteise suhtes. Takistusjõud: F ~ v (Stokesi valem)."
+  },
+  {
+    "id": 24,
+    "question": "Keskkonnatakistuse põhjus vedelikes. Selle sõltuvus temperatuurist (põhjendusega).",
+    "answer": "Põhjus: viskoossus (molekulidevahelised jõud). Sõltuvus: kõrgem T → väiksem viskoossus → väiksem takistus (molekulid liiguvad rohkem)."
+  },
+  {
+    "id": 25,
+    "question": "Keskkonnatakistuse põhjus gaasides. Selle sõltuvus temperatuurist (põhjendusega).",
+    "answer": "Põhjus: molekulide põrked. Sõltuvus: kõrgem T → suurem molekulide kiirus → suurem takistus."
+  },
+  {
+    "id": 26,
+    "question": "Turbulentse voolamise definitsioon. Takistusjõu sõltuvus kiirusest.",
+    "answer": "Turbulentne voolamine: kaootiline voolamine keeristega. Takistusjõud: F ~ v²."
+  },
+  {
+    "id": 27,
+    "question": "Näited keskkonnatakistuse vähendamisest keha kuju abil.",
+    "answer": "Aerodünaamiline kuju: autod, lennukid, ujujad (kiiver, riided). Hüdrodünaamiline kuju: laevad, allveelaevad, kalad."
+  },
+  {
+    "id": 28,
+    "question": "Keskkonnatakistus ja selle vähendamine ülehelikiiruse korral. Näited.",
+    "answer": "Ülehelikiirus: löökaine tekib. Vähendamine: terav nina, spetsiaalne kuju. Näited: Concorde, hävitajad, rakendused."
+  },
+  {
+    "id": 29,
+    "question": "Töö definitsioon. Arvutusvalem konstantse jõu korral, joonis selgitustega. Ühiku definitsioon.",
+    "answer": "Töö: energia ülekanne jõu toimel. Valem: W = F·s·cos(α). Ühik: džaul (J), 1 J = 1 N·m."
+  },
+  {
+    "id": 30,
+    "question": "Töö valem üldjuhul. Joonis.",
+    "answer": "W = ∫F·ds = ∫F·cos(α)ds. Integreeritakse jõu projektsiooni liikumissuunas."
+  },
+  {
+    "id": 31,
+    "question": "Võimsuse valem ja ühiku definitsioon.",
+    "answer": "Võimsus: P = W/t = dW/dt. Ühik: vatt (W), 1 W = 1 J/s."
+  },
+  {
+    "id": 32,
+    "question": "Võimsuse sõltuvus kiirusest (valemi tuletamine).",
+    "answer": "P = dW/dt = F·ds/dt = F·v. Võimsus on võrdeline kiirusega."
+  },
+  {
+    "id": 33,
+    "question": "Kasuteguri mõiste ja valem.",
+    "answer": "Kasutegur: η = Wkasulik/Wkulutatud = Pkasulik/Pkulutatud. Näitab energiakadusid."
+  },
+  {
+    "id": 34,
+    "question": "Dissipatiivjõu definitsioon.",
+    "answer": "Dissipatiivjõud muudab mehaanilise energia soojuseks (nt hõõrdejõud, õhutakistus)."
+  },
+  {
+    "id": 35,
+    "question": "Energia definitsioon.",
+    "answer": "Energia: süsteemi võime teha tööd."
+  },
+  {
+    "id": 36,
+    "question": "Kineetilise energia definitsioon ja valem tuletamisega.",
+    "answer": "Kineetiline energia: liikumisenergia. Tuletamine: Eₖ = ∫F·ds = ∫ma·ds = m∫v·dv = mv²/2."
+  },
+  {
+    "id": 37,
+    "question": "Potentsiaalse energia definitsioon. Selle valemid tuletamisega ülestõstetud keha ja elastselt deformeeritud keha korral.",
+    "answer": "Potentsiaalne energia: asendi energia. Ülestõstetud keha: Eₚ = ∫mg·dh = mgh. Elastne: Eₚ = ∫kx·dx = kx²/2."
+  },
+  {
+    "id": 38,
+    "question": "Konservatiivse jõu definitsioon ja järeldused sellest. Näited konservatiivse jõu kohta.",
+    "answer": "Konservatiivne jõud: töö ei sõltu trajektoorist. Järeldused: töö suletud trajektooril = 0. Näited: gravitatsioon, elastsusjõud."
+  },
+  {
+    "id": 39,
+    "question": "Gradiendi definitsioon.",
+    "answer": "Gradient: vektoriline tuletis, näitab suurima muutuse suunda ja kiirust. grad(f) = ∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z)."
+  },
+  {
+    "id": 40,
+    "question": "Potentsiaalse energia gradiendi valemi tuletamine.",
+    "answer": "F = -grad(Eₚ) = -∇Eₚ. Jõud on suunatud potentsiaalse energia vähenemise suunas."
+  },
+  {
+    "id": 41,
+    "question": "Energia jäävuse seadus.",
+    "answer": "Isoleeritud süsteemi koguenergia on konstantne: Ekogu = const."
+  },
+  {
+    "id": 42,
+    "question": "Suletud süsteemi definitsioon. Mehaanilise energia jäävuse seaduse sõnastus ja valem.",
+    "answer": "Suletud süsteem: välised jõud puuduvad. Seadus: kui dissipatiivjõud puuduvad, siis Eₖ + Eₚ = const."
+  },
+  {
+    "id": 43,
+    "question": "Keha relativistliku koguenergia valemi tuletamine. Järeldus sellest valemist väikeste kiiruste korral. Seisuenergia definitsioon.",
+    "answer": "E = mc² = m₀c²/√(1 - v²/c²). Väikeste kiiruste korral: E ≈ m₀c² + m₀v²/2. Seisuenergia: E₀ = m₀c²."
+  },
+  {
+    "id": 44,
+    "question": "Näited massi energiaks muutumise kohta.",
+    "answer": "Tuumajaotus, tuumasüntees, aatomipomm, Päikese energia, antiaine ja aine reaktsioon."
+  },
+  {
+    "id": 45,
+    "question": "Ülemaailmse gravitatsiooniseaduse sõnastus, valem, joonis selgitustega.",
+    "answer": "Kahe massi vastasmõju jõud: F = G·m₁m₂/r², kus G = 6.67×10⁻¹¹ N·m²/kg². Jõud on tõmbav ja pöördvõrdeline kauguse ruuduga."
+  },
+  {
+    "id": 46,
+    "question": "Vaba langemise kiirenduse valemi tuletamine. Joonis selgitustega.",
+    "answer": "mg = G·m·M/R² → g = G·M/R², kus M on Maa mass, R on Maa raadius."
+  },
+  {
+    "id": 47,
+    "question": "Esimese kosmilise kiiruse valemi tuletamine. Joonis selgitustega.",
+    "answer": "Tsentripetaalkiirendus = gravitatsioonikiirendus: v²/R = g → v₁ = √(gR) ≈ 7.9 km/s."
+  },
+  {
+    "id": 48,
+    "question": "Kaaslase tiirlemisperioodi arvutamise valemi tuletamine. Näited selle praktilise rakendamise kohta.",
+    "answer": "G·M·m/r² = m·v²/r ja v = 2πr/T → T² = 4π²r³/(GM). Rakendused: GPS, side, ilmavaatlus."
+  },
+  {
+    "id": 49,
+    "question": "Maa ja kuu raadiuse arvutamine.",
+    "answer": "Mõõdetakse nurk ja lineaarne kaugus maapinnal või kasutatakse varju/valguse meetodeid Kuu puhul."
+  },
+  {
+    "id": 50,
+    "question": "Maa ja Kuu ning Maa ja Päikese vahelise kauguse arvutamine. Joonised selgitustega.",
+    "answer": "Maa-Kuu: parallaksi meetod. Maa-Päike: Kepleri seadused, Maa orbiidi parameetrid, Venuse transit."
+  },
+  {
+    "id": 51,
+    "question": "Töö valemi tuletamine proovikeha liigutamisel gravitatsiooniväljas. Joonis selgitustega.",
+    "answer": "W = ∫F·dr = ∫G·M·m/r²·dr = G·M·m(1/r₁ - 1/r₂)."
+  },
+  {
+    "id": 52,
+    "question": "Töö valemi tuletamine proovikeha viimiseks lõpmata kaugele.",
+    "answer": "W = G·M·m/r (kui r₂ → ∞)."
+  },
+  {
+    "id": 53,
+    "question": "Teise kosmilise kiiruse definitsioon ja selle valemi tuletamine. Joonis koos selgitustega.",
+    "answer": "Teine kosmilise kiirus: kiirus Maa gravitatsiooniväljas põgenemiseks. mv₂²/2 = G·M·m/R → v₂ = √(2gR) ≈ 11.2 km/s."
+  },
+  {
+    "id": 54,
+    "question": "Musta augu definitsioon. Schwarzschildi raadiuse valem ja selle põhjendus.",
+    "answer": "Must auk: objekt, millest valgus ei pääse. Schwarzschildi raadius: rₛ = 2GM/c². Põhjendus: teine kosmilise kiirus = c."
+  },
+  {
+    "id": 55,
+    "question": "Musta augu tekkimise mehhanism.",
+    "answer": "Massiivse tähe kollaps gravitatsiooni mõjul pärast tuumaküduse ammendumist (supernova)."
+  },
+  {
+    "id": 56,
+    "question": "Impulsi mõiste ja valem.",
+    "answer": "Impulss: liikumishulk. Valem: p = mv."
+  },
+  {
+    "id": 57,
+    "question": "Jõuimpulsi valemi tuletamine konstantse jõu korral. Jõuimpulsi üldine valem.",
+    "answer": "Konstantne jõud: I = F·Δt = Δp. Üldine: I = ∫F·dt."
+  },
+  {
+    "id": 58,
+    "question": "Newtoni II seadus üldisemal kujul (sõnastus ja valem).",
+    "answer": "Jõud võrdub impulsi muutuse kiirusega: F = dp/dt."
+  },
+  {
+    "id": 59,
+    "question": "Impulsi jäävuse seaduse tuletamine. Seaduse sõnastus ja valem selgitustega.",
+    "answer": "Kui Fvälis = 0, siis dp/dt = 0 → p = const. Suletud süsteemi koguimpulss on konstantne: Σpᵢ = const."
+  },
+  {
+    "id": 60,
+    "question": "Põrkeprodukti lõppkiiruse ja tekkiva soojusenergia valemite tuletamine absoluutselt mitteelastsel põrkel. Joonised selgitustega.",
+    "answer": "Impulsi jäävus: m₁v₁ + m₂v₂ = (m₁ + m₂)v → v = (m₁v₁ + m₂v₂)/(m₁ + m₂). Soojus: Q = Eₖ₁ + Eₖ₂ - Eₖ."
+  },
+  {
+    "id": 61,
+    "question": "Kehade lõppkiiruse arvutamine absoluutselt elastsel põrkel.",
+    "answer": "Impulsi ja energia jäävus: v₁' = ((m₁-m₂)v₁ + 2m₂v₂)/(m₁+m₂), v₂' = ((m₂-m₁)v₂ + 2m₁v₁)/(m₁+m₂)."
+  },
+  {
+    "id": 62,
+    "question": "Keha impulsi valem relatiivsusteoorias.",
+    "answer": "p = mv = m₀v/√(1 - v²/c²)."
+  },
+  {
+    "id": 63,
+    "question": "Relativistlik seos massi, impulsi ja energia vahel koos tuletamisega. Seose esitus täisnurkse kolmnurga abil.",
+    "answer": "E² = (pc)² + (m₀c²)². Tuletamine: E = mc², p = mv. Kolmnurk: E on hüpotenuus, pc ja m₀c² on kaatetid."
+  },
+  {
+    "id": 64,
+    "question": "Aine ehituse põhimõtted Demokritose järgi.",
+    "answer": "Aine koosneb jagamatutest osakestest (aatomid), need liiguvad tühimikus ja erinevad kuju, suuruse ja asendi poolest."
+  },
+  {
+    "id": 65,
+    "question": "Tahke oleku iseloomustus. Kristallide ja amorfsete ainete molekulaarse ehituse võrdlus. Näited.",
+    "answer": "Tahke: kindel kuju ja maht. Kristallid: korrapärane struktuur (sool, metallid). Amorfsed: korrapäratu struktuur (klaas, vaigud)."
+  },
+  {
+    "id": 66,
+    "question": "Vedela, gaasilise ja plasmaoleku iseloomustus.",
+    "answer": "Vedel: kindel maht, võtab anuma kuju. Gaas: ei ole kindlat kuju ega mahtu. Plasma: ioniseeritud gaas (tähed, välgud)."
+  },
+  {
+    "id": 67,
+    "question": "Temperatuuri ja difusiooni mõisted. Näited difusiooni kohta.",
+    "answer": "Temperatuur: molekulide keskmise kineetilise energia mõõt. Difusioon: aineosakeste seginemine. Näited: lõhn, tee, värvaine vees."
+  },
+  {
+    "id": 68,
+    "question": "Seos molekulide kineetilise energia ja temperatuuri vahel. Absoluutne nulltemperatuur.",
+    "answer": "Eₖ = (3/2)kT, kus k on Boltzmanni konstant. Absoluutne null: T = 0 K = -273.15°C, molekulide liikumine peatub."
+  },
+  {
+    "id": 69,
+    "question": "Aine soojendamiseks vajaliku energiahulga arvutusvalem selgitustega.",
+    "answer": "Q = mcΔT, kus c on erisoojus, m on mass, ΔT on temperatuuri muutus."
+  },
+  {
+    "id": 70,
+    "question": "Sulamise ja tahkumise definitsioon. Kristalli ja amorfse aine sulamise kirjeldus.",
+    "answer": "Sulamine: tahkest vedelaks. Tahkumine: vedelast tahkeks. Kristall: sulamistemperatuur konstantne. Amorfne: sulamisvahemik."
+  },
+  {
+    "id": 71,
+    "question": "Kristalse aine sulatamiseks vajaliku soojushulga arvutusvalem selgitustega.",
+    "answer": "Q = λm, kus λ on sulamissoojus (J/kg), m on mass."
+  },
+  {
+    "id": 72,
+    "question": "Tahkumisprotsessi kirjeldus.",
+    "answer": "Vedelik jahtumine → molekulid liiguvad aeglasemalt → moodustub kristallvõre. Temperatuur konstantne tahkumisel."
+  },
+  {
+    "id": 73,
+    "question": "Aurumise ja kondenseerumise definitsioon.",
+    "answer": "Aurumine: vedelast gaasiliseks (pinnalt). Kondenseerumine: gaasist vedelaks."
+  },
+  {
+    "id": 74,
+    "question": "Aurumist kiirendavad tegurid.",
+    "answer": "Kõrgem temperatuur, suurem pindala, tuulamine (auru eemaldamine), madalam õhurõhk."
+  },
+  {
+    "id": 75,
+    "question": "Keemise definitsioon. Aine aurustamiseks vajaliku soojushulga arvutusvalem. Keemistemperatuuri ja õhurõhu seos.",
+    "answer": "Keemine: keemistemperatuuril aurumine kogu vedeliku massist. Q = Lm, kus L on aurustumisoojus. Madalam rõhk → madalam keemistemperatuur."
+  },
+  {
+    "id": 76,
+    "question": "Kristalli sulamise ja keemise graafik selgitustega.",
+    "answer": "Graafik: T vs t. Horisontaalsed lõigud sulamisel ja keemisel (T = const), kalduvad lõigud soojendamisel/jahtumises."
+  },
+  {
+    "id": 77,
+    "question": "Sublimatsioon ja härmatumine.",
+    "answer": "Sublimatsioon: tahkest otse gaasiks (nt kuiv jää, kamper). Härmatumine: gaasist otse tahkeks (härmatis)."
+  },
+  {
+    "id": 78,
+    "question": "Latentse soojuse definitsioon. Näited latentse soojuse praktilise kasutuse kohta.",
+    "answer": "Latentne soojus: faasiüleminekuks vajalik energia. Kasutus: külmutusseadmed, õhukonditsioneerid, aurumootorid."
+  },
+  {
+    "id": 79,
+    "question": "Latentse soojuse tähtsus metroloogias.",
+    "answer": "Faasiüleminekud toimuvad konstantsel temperatuuril, mida saab kasutada temperatuuri etaloonidena (nt vee kolmik punkt)."
+  },
+  {
+    "id": 80,
+    "question": "Soojusjuhtivuse definitsioon. Soojusjuhtivuse mehhanismi selgitus aine molekulaarse ehituse abil.",
+    "answer": "Soojusjuhtivus: soojusülekanne aineosakeste vahetul kokkupuutel. Mehhanismus: kiiremad molekulid annavad energiat aeglasematele."
+  },
+  {
+    "id": 81,
+    "question": "Näited heade ja halbade soojusjuhtide kohta.",
+    "answer": "Head: metallid (Cu, Al, Ag). Halvad: õhk, vaht, villa, puit, plast."
+  },
+  {
+    "id": 82,
+    "question": "Fourier´ seadus valemi kujul, joonis koos selgitustega.",
+    "answer": "Q/t = -λA(dT/dx), kus λ on soojusjuhtivuskoefitsient, A on pindala. Soojus liigub kõrgema temperatuuri poolt madalama poole."
+  },
+  {
+    "id": 83,
+    "question": "Konvektsiooni definitsioon, selle toimumise põhimõte.",
+    "answer": "Konvektsioon: soojusülekanne aine liikumisega. Põhimõte: soojem aine paisub, muutub kergeks ja tõuseb."
+  },
+  {
+    "id": 84,
+    "question": "Briisi teke konvektsiooni tõttu.",
+    "answer": "Päeval: maa soojeneb kiiremini → õhk tõuseb maismaal → merebriis. Öösel: vastupidine protsess → maabriis."
+  },
+  {
+    "id": 85,
+    "question": "Soojuskiirguse definitsioon.",
+    "answer": "Soojuskiirgus: soojusülekanne elektromagnetlainete (infrapuna) kaudu ilma vahendajata."
+  },
+  {
+    "id": 86,
+    "question": "Absoluutselt musta, valge ja läbipaistva keha definitsioonid.",
+    "answer": "Must keha: neelab kogu kiirguse. Valge keha: peegeldab kogu kiirguse. Läbipaistev: laseb kiirguse läbi."
+  },
+  {
+    "id": 87,
+    "question": "Märgamise ja mittemärgamise definitsioon ja selgitus.",
+    "answer": "Märgamine: vedelik niisutab pinda (adhesioon > kohesioon). Mittemärgamine: adhesioon < kohesioon."
+  },
+  {
+    "id": 88,
+    "question": "Vedeliku pinnakihi tekkimise selgitus aine molekulaarse ehituse abil. Joonis.",
+    "answer": "Pinnale molekulid on tõmmatud sissepoole, resultantjõud suunatud sisse → pinnakile käitub nagu elastne kilekile."
+  },
+  {
+    "id": 89,
+    "question": "Pindpinevusjõu valem.",
+    "answer": "F = σl, kus σ on pindpinevuskoefitsient, l on kontuurijoone pikkus."
+  },
+  {
+    "id": 90,
+    "question": "Kapillaarsuse definitsioon. Kapillaarsus märgavates ja mittemärgavates vedelikes. Joonis.",
+    "answer": "Kapillaarsus: vedeliku tõusmine/langemine õhukeses torus. Märgav: tõuseb (nõgus menisk). Mittemärgav: langeb (kumer menisk)."
+  },
+  {
+    "id": 91,
+    "question": "Valemi tuletamine vedeliku tõusukõrguse määramiseks. Joonis selgitustega.",
+    "answer": "Tasakaal: pindpinevusjõud = raskusjõud. 2πrσ = πr²hρg → h = 2σ/(ρgr)."
+  },
+  {
+    "id": 92,
+    "question": "Ideaalse gaasi iseloomustus.",
+    "answer": "Molekulid on punktmassid, kokkupõrked on elastsed, molekulidevahelised jõud puuduvad välja arvatud kokkupõrkeil."
+  },
+  {
+    "id": 93,
+    "question": "Gaasi rõhu valemi tuletamine.",
+    "answer": "p = (1/3)nmv̄², kus n on molekulide kontsentratsioon, m molekuli mass, v̄² keskmine ruutkiirus."
+  },
+  {
+    "id": 94,
+    "question": "Gaasi rõhu valemi teisendid.",
+    "answer": "p = (2/3)nEₖ = nkT, kus Eₖ on molekuli keskmine kineetiline energia, k on Boltzmanni konstant."
+  },
+  {
+    "id": 95,
+    "question": "Siseenergia definitsioon.",
+    "answer": "Siseenergia: süsteemi kõigi molekulide kineetilise ja potentsiaalse energia summa."
+  },
+  {
+    "id": 96,
+    "question": "Gaasimolekuli summaarse kineetilise energia valem.",
+    "answer": "Eₖ = (i/2)kT, kus i on vabadusastmete arv."
+  },
+  {
+    "id": 97,
+    "question": "Näited erineva vabadusastmete arvuga molekulide kohta.",
+    "answer": "Üheaatomilised (He, Ar): i = 3. Kaheaatomilised (O₂, N₂): i = 5. Kolme- ja enam (CO₂, H₂O): i = 6."
+  },
+  {
+    "id": 98,
+    "question": "Avogadro valemi tuletamine. Avogadro seaduse sõnastus.",
+    "answer": "pV = NkT ja pV = (N/Nₐ)RT → k = R/Nₐ. Seadus: võrdsetes tingimustes sisaldavad võrdsed mahud erinevaid gaase sama arvu molekule."
+  },
+  {
+    "id": 99,
+    "question": "Avogadro seaduse kasutamine gaaside suhteliste molekulmasside määramiseks.",
+    "answer": "m₁/m₂ = ρ₁/ρ₂ sama rõhu ja temperatuuri korral. Võrreldes gaasi tihedust teadaoleva gaasi tihedusega."
+  },
+  {
+    "id": 100,
+    "question": "Aine keemilise koostise hindamine Avogadro seadust kasutades vee näitel.",
+    "answer": "Elektrolüüs annab H₂:O₂ = 2:1 mahu järgi. Kuna võrdsed mahud sisaldavad võrdset arvu molekule, on H₂O valem."
+  },
+  {
+    "id": 101,
+    "question": "Mooli definitsioon.",
+    "answer": "Mool: aineühik, mis sisaldab Nₐ = 6.02×10²³ osakest (aatomit, molekule). Moolmass gramm on numbriliselt võrdne suhtelise aatommassiga."
+  },
+  {
+    "id": 102,
+    "question": "Mendelejev-Clapeyroni võrrandi tuletamine Avogadro seadusest.",
+    "answer": "pV = NkT = (m/M)NₐkT = (m/M)RT = νRT, kus ν on moolide arv, R = 8.31 J/(mol·K)."
+  },
+  {
+    "id": 103,
+    "question": "Clapeyroni võrrandi sõnastus ja valem.",
+    "answer": "Ideaalse gaasi olekuvõrrand: pV/T = const või p₁V₁/T₁ = p₂V₂/T₂."
+  },
+  {
+    "id": 104,
+    "question": "Isotermiline protsess – definitsioon, valem, graafik, näide.",
+    "answer": "T = const. Boyle-Mariotte'i seadus: pV = const. Graafik: hüperbool p-V diagrammil. Näide: aeglane kokkusurumine."
+  },
+  {
+    "id": 105,
+    "question": "Isobaarmiline protsess – definitsioon, valem, graafik, näide.",
+    "answer": "p = const. Gay-Lussaci seadus: V/T = const. Graafik: sirge V-T diagrammil. Näide: õhk kolvis liikuva kolviga."
+  },
+  {
+    "id": 106,
+    "question": "Isohooriline protsess – definitsioon, valem, graafik, näide.",
+    "answer": "V = const. Charles'i seadus: p/T = const. Graafik: sirge p-T diagrammil. Näide: gaas suletud anumal."
+  },
+  {
+    "id": 107,
+    "question": "Gaasi paisumistöö valemi tuletamine. Joonis selgitustega.",
+    "answer": "dW = F·dx = pA·dx = p·dV → W = ∫p·dV. Töö on võrdne pindalaga p-V diagrammil."
+  },
+  {
+    "id": 108,
+    "question": "Termodünaamika esimene seadus.",
+    "answer": "ΔU = Q - W. Siseenergia muutus võrdub süsteemile antud soojuse ja süsteemi tehtud töö vahega."
+  },
+  {
+    "id": 109,
+    "question": "Ideaalse gaasi siseenergia valem tuletamisega.",
+    "answer": "U = N·Eₖ = N(i/2)kT = ν(i/2)RT."
+  },
+  {
+    "id": 110,
+    "question": "Aine erisoojuse ja moolsoojuse definitsioonid.",
+    "answer": "Erisoojus c: energia 1 kg aine temperatuuri tõstmiseks 1 K. Moolsoojus C: energia 1 mooli temperatuuri tõstmiseks 1 K."
+  },
+  {
+    "id": 111,
+    "question": "Isohoorilise moolsoojuse ja erisoojuse valemite tuletamine.",
+    "answer": "V = const → W = 0 → Q = ΔU = ν(i/2)RΔT → Cᵥ = (i/2)R. cᵥ = Cᵥ/M."
+  },
+  {
+    "id": 112,
+    "question": "Gaasi töö isobaarilises protsessis. Isobaarilise mool- ja erisoojuse valemite tuletamine.",
+    "answer": "W = pΔV = νRΔT. Q = ΔU + W = ν(i/2)RΔT + νRΔT → Cₚ = ((i+2)/2)R. cₚ = Cₚ/M."
+  },
+  {
+    "id": 113,
+    "question": "Gaasi töö arvutusvalemi tuletamine isotermilises protsessis.",
+    "answer": "T = const → ΔU = 0 → Q = W = ∫p·dV = ∫(νRT/V)·dV = νRT·ln(V₂/V₁)."
+  },
+  {
+    "id": 114,
+    "question": "Adiabaatilise protsessi definitsioon ja selle võrrandi tuletamine.",
+    "answer": "Q = 0. pVᵞ = const, kus γ = Cₚ/Cᵥ = (i+2)/i. Tuletamine: ΔU = -W, kasutades ideaalse gaasi võrrandit."
+  },
+  {
+    "id": 115,
+    "question": "Entroopia definitsioon. Termodünaamika teine seadus.",
+    "answer": "Entroopia: süsteemi korrastamatuse mõõt. S = Q/T. Teine seadus: isoleeritud süsteemi entroopia kasvab või jääb samaks."
+  },
+  {
+    "id": 116,
+    "question": "Näited entroopia kasvu kohta.",
+    "answer": "Soojuse levimine, gaasi laienemine, segamine, hõõrdumine, keemilised reaktsioonid."
+  },
+  {
+    "id": 117,
+    "question": "Coulombi seaduse sõnastus, valem, joonis selgitustega.",
+    "answer": "F = k|q₁q₂|/r², kus k = 9×10⁹ N·m²/C². Jõud on võrdeline laengute korrutisega ja pöördvõrdeline kauguse ruuduga."
+  },
+  {
+    "id": 118,
+    "question": "Kehade staatilise elektriseerimise selgitus.",
+    "answer": "Hõõrdumisel elektronid liiguvad ühelt kehalt teisele. Üks keha muutub positiivseks, teine negatiivseks."
+  },
+  {
+    "id": 119,
+    "question": "Elektrilaengu jäävuse seadus.",
+    "answer": "Suletud süsteemi kogulaeng on konstantne: Σqᵢ = const."
+  },
+  {
+    "id": 120,
+    "question": "Punktlaengu elektrivälja tugevus. Elektrivälja superpositsiooni printsiip.",
+    "answer": "E = kq/r². Superpositsioon: E = ΣEᵢ, resultantväli on üksikväjade vektorsumma."
+  },
+  {
+    "id": 121,
+    "question": "Laengu liigutamisel tehtud töö valemi tuletamine.",
+    "answer": "W = ∫F·dr = ∫qE·dr."
+  },
+  {
+    "id": 122,
+    "question": "Kahe punktlaengu vastasmõju potentsiaalne energia.",
+    "answer": "Eₚ = kq₁q₂/r."
+  },
+  {
+    "id": 123,
+    "question": "Elektrostaatiline potentsiaal. Laengu liigutamiseks vajaliku töö arvutamine potentsiaali kaudu.",
+    "answer": "Potentsiaal: φ = Eₚ/q = kQ/r. Töö: W = q(φ₁ - φ₂) = qΔφ."
+  },
+  {
+    "id": 124,
+    "question": "Potentsiaali superpositsiooni printsiip.",
+    "answer": "φ = Σφᵢ. Resultantpotentsiaal on üksikpotentsiaalide summa (skalaar)."
+  },
+  {
+    "id": 125,
+    "question": "Elektrivälja jõujoone definitsioon.",
+    "answer": "Jõujoon: joon, mille puutuja igas punktis langeb kokku elektrivälja tugevuse vektori suunaga."
+  },
+  {
+    "id": 126,
+    "question": "Elektrivälja jõujooned punktlaengute lähedal.",
+    "answer": "Positiivne laeng: jõujooned lahkuvad laengust. Negatiivne laeng: jõujooned lähenevad laengule."
+  },
+  {
+    "id": 127,
+    "question": "Elektrivälja tugevuse voog läbi lõpmata väikese pinna. Valem ja joonis selgitustega.",
+    "answer": "dΦ = E·dA·cos(α) = E·dA⊥, kus α on nurk E ja normaalvektori vahel."
+  },
+  {
+    "id": 128,
+    "question": "Elektrivälja tugevuse voo arvutamine lõpliku pinna korral.",
+    "answer": "Φ = ∫E·dA = ∫E·cos(α)·dA."
+  },
+  {
+    "id": 129,
+    "question": "Elektrivälja tugevuse voo geomeetriline tähendus.",
+    "answer": "Voog näitab läbi pinna läbivate jõujoonte arvu."
+  },
+  {
+    "id": 130,
+    "question": "Gaussi teoreemi sõnastus ja valem. Selle tuletamine punktlaengu korral.",
+    "answer": "Φ = q/ε₀, kus ε₀ = 8.85×10⁻¹² C²/(N·m²). Suletud pinnalt läbiv voog on võrdeline selle sees oleva laenguga."
+  },
+  {
+    "id": 131,
+    "question": "Lõpmata suure, ühtlaselt laetud tasandi elektrivälja tugevuse valemi tuletamine. Joonised selgitustega.",
+    "answer": "Gaussi teoreemist: E = σ/(2ε₀), kus σ on pinnaline laengutihedus. Väli on ühtlane ja risti tasandiga."
+  },
+  {
+    "id": 132,
+    "question": "Dielektriku definitsioon. Coulombi seadus dielektrikus. Dielektrilise läbitavuse definitsioon.",
+    "answer": "Dielektrik: mittejuhtiv aine. Dielektrikus: F = kq₁q₂/(εr²), kus ε on suhteline dielektriline läbitavus (ε ≥ 1)."
+  },
+  {
+    "id": 133,
+    "question": "Kvalitatiivne põhjendus elektrivälja nõrgenemisele dielektrikus.",
+    "answer": "Dielektriku molekulid polariseeruvad, tekivad dipoolid, mis tekitavad vastassuunalise välja → resultantväli nõrgeneb."
+  },
+  {
+    "id": 134,
+    "question": "Staatilise elektrivälja tugevus ja potentsiaal metallides.",
+    "answer": "Metalli sees: E = 0, φ = const. Laengud jaotuvad pinnale, tekitavad välisvälja."
+  },
+  {
+    "id": 135,
+    "question": "Mahtuvuse definitsioon ja valem.",
+    "answer": "Mahtuvus: C = q/U. Näitab, kui palju laengut saab salvestada ühiku pinge korral. Ühik: farad (F)."
+  },
+  {
+    "id": 136,
+    "question": "Kera mahtuvuse arvutamine.",
+    "answer": "C = 4πε₀r, kus r on kera raadius."
+  },
+  {
+    "id": 137,
+    "question": "Kondensaatori elektrivälja tugevuse valemi tuletamine.",
+    "answer": "E = σ/ε₀ taskkondensaatoris (kahe tasandi vahel väljad liituvad)."
+  },
+  {
+    "id": 138,
+    "question": "Kondensaatori pinge valemi tuletamine.",
+    "answer": "U = E·d = σd/ε₀, kus d on plaatide vahekaugus."
+  },
+  {
+    "id": 139,
+    "question": "Kondensaatori mahtuvuse valemi tuletamine.",
+    "answer": "C = q/U = q/(Ed) = q/(σd/ε₀) = εε₀A/d, kus A on plaadi pindala."
+  },
+  {
+    "id": 140,
+    "question": "Punktlaengute süsteemi energia valem.",
+    "answer": "W = (1/2)Σᵢ≠ⱼ kqᵢqⱼ/rᵢⱼ."
+  },
+  {
+    "id": 141,
+    "question": "Laetud kondensaatori energia valemi tuletamine.",
+    "answer": "W = ∫U·dq = ∫(q/C)·dq = q²/(2C) = CU²/2 = qU/2."
+  },
+  {
+    "id": 142,
+    "question": "Elektrivoolu definitsioon ja tekketingimused. Voolu suund.",
+    "answer": "Vool: laengukandjate suunatud liikumine. Tingimus: potentsiaalide vahe. Suund: positiivsete laengukandjate liikumise suund."
+  },
+  {
+    "id": 143,
+    "question": "Galvaanielemendi ehitus ja tööpõhimõte.",
+    "answer": "Kaks erinevat metalli elektrolüütlahuses. Keemilised reaktsioonid tekitavad potentsiaalide vahe, mis põhjustab voolu."
+  },
+  {
+    "id": 144,
+    "question": "Elektrivoolu soojuslik toime.",
+    "answer": "Vool soojendab juhtmeid. Kasutus: kütteseadmed, lambipirnid, sulakud."
+  },
+  {
+    "id": 145,
+    "question": "Elektrivoolu keemiline toime. Elektrolüüs.",
+    "answer": "Vool põhjustab keemilisi reaktsioone. Elektrolüüs: ainete lagundamine/sadestumine elektrodidel. Kasutus: metallide katmine, puhastamine."
+  },
+  {
+    "id": 146,
+    "question": "Elektrivoolu magnetiline toime.",
+    "answer": "Vool tekitab magnetvälja. Kasutus: elektromagnedid, mootorid, mõõteriistades."
+  },
+  {
+    "id": 147,
+    "question": "Ampri definitsioon.",
+    "answer": "1 amper: voolutugevus, mille korral kahe paralleelse lõpmata pika juhtme vahel (1 m kaugusel) jõud on 2×10⁻⁷ N ühe meetri kohta."
+  },
+  {
+    "id": 148,
+    "question": "Kuloni definitsioon.",
+    "answer": "1 kulon: laeng, mis liigub 1 ampri voolu korral 1 sekundi jooksul. 1 C = 1 A·s."
+  },
+  {
+    "id": 149,
+    "question": "Ohmi seaduse sõnastus ja valem. Jooni selgitustega.",
+    "answer": "Voolutugevus on võrdeline pingega ja pöördvõrdeline takistusega: I = U/R. Graafik: I-U on sirge."
+  },
+  {
+    "id": 150,
+    "question": "Joule´i-Lenzi seaduse sõnastus, valem tuletamisega. Tarbijal eralduv võimsus.",
+    "answer": "Q = I²Rt = UIt = U²t/R. Tuletamine: W = qU = ItU. Võimsus: P = UI = I²R = U²/R."
+  },
+  {
+    "id": 151,
+    "question": "Elektrivool metallides. Vabad laengukandjad. Takistuse sõltuvus temperatuurist põhjendusega.",
+    "answer": "Laengukandjad: vabad elektronid. Kõrgem T → rohkem võnkuvad aatomid → suurem takistus (R kasvab)."
+  },
+  {
+    "id": 152,
+    "question": "Vabade laengukandjate teke elektrolüüdilahustes. Takistuse sõltuvus temperatuurist põhjendusega.",
+    "answer": "Elektrolüütdissotsiatsioon → ioonid. Kõrgem T → rohkem dissotsieerunud → rohkem laengukandjaid → väiksem takistus (R väheneb)."
+  },
+  {
+    "id": 153,
+    "question": "Vabade laengukandjate teke pooljuhtides. Takistuse sõltuvus temperatuurist põhjendusega.",
+    "answer": "Termilise ergastuse tõttu elektronid hüppavad juhtivusvöösse. Kõrgem T → rohkem elektrone → väiksem takistus (R väheneb)."
+  },
+  {
+    "id": 154,
+    "question": "Pinge, potentsiaalide vahe ja elektromotoorjõu definitsioonid.",
+    "answer": "Pinge/potentsiaalide vahe: U = φ₁ - φ₂, töö laenguühiku liigutamisel. EMJ: ε, töö väliste jõudude poolt laenguühiku liigutamisel allika sees."
+  },
+  {
+    "id": 155,
+    "question": "Üldistatud Ohmi seaduse sõnastus, valem tuletamisega, joonis selgitustega.",
+    "answer": "I = ε/(R+r), kus r on allika sisetakistus. Tuletamine: ε = U + Ir = IR + Ir."
+  },
+  {
+    "id": 156,
+    "question": "Ohmi seadus suletud vooluringis. Sõnastus, valem, joonis selgitustega.",
+    "answer": "I = ε/(R+r). Allika EMJ võrdub pinge langusega välises ja sisemises ahelas."
+  },
+  {
+    "id": 157,
+    "question": "Kirchhoffi esimese seaduse sõnastus, valem tuletamisega, joonis selgitustega.",
+    "answer": "Sõlmpunkti sissetulevate voolude summa võrdub väljatulevate summaga: ΣIsissetule = ΣIväljatulevad või ΣI = 0. Tuletamine: laengu jäävus."
+  },
+  {
+    "id": 158,
+    "question": "Kirchhoffi teise seaduse sõnastus, valem tuletamisega.",
+    "answer": "Suletud ahelas EMJ-de summa võrdub pinge languste summaga: Σε = ΣIR. Tuletamine: energia jäävus."
+  },
+  {
+    "id": 159,
+    "question": "Voolutugevus, kogutakistus, pinge ja võimsus jadaühendusel. Joonis selgitustega.",
+    "answer": "I = const. R = ΣRᵢ. U = ΣUᵢ. P = ΣPᵢ."
+  },
+  {
+    "id": 160,
+    "question": "Voolutugevus, kogutakistus, pinge ja võimsus rööpühendusel. Joonis selgitustega.",
+    "answer": "U = const. 1/R = Σ(1/Rᵢ). I = ΣIᵢ. P = ΣPᵢ."
+  },
+  {
+    "id": 161,
+    "question": "Elektromotoorjõu allika kasuteguri valem tuletamisega.",
+    "answer": "η = Pkasulik/Pkogu = UI/(εI) = U/ε = R/(R+r)."
+  },
+  {
+    "id": 162,
+    "question": "Elektromotoorjõu allika kasuliku võimsuse valem tuletamisega, selle maksimumi leidmine.",
+    "answer": "P = UI = I²R = ε²R/(R+r)². Maksimum: dP/dR = 0 → R = r, Pₘₐₓ = ε²/(4r)."
+  },
+  {
+    "id": 163,
+    "question": "Lühiühendus.",
+    "answer": "R → 0, I = ε/r (väga suur vool). Ohtlik: võib kahjustada allikat ja põhjustada tulekahju."
+  },
+  {
+    "id": 164,
+    "question": "Magnetvälja jõujooned sirgjuhtme läheduses. Joonis selgitustega. Kruvi reegel.",
+    "answer": "Kontsentrilised ringid juhtme ümber. Kruvi reegel: parema keermega kruvi keeratakse voolu suunas, reegel näitab välja suunda."
+  }
+]
