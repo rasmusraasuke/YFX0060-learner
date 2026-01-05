@@ -4,6 +4,13 @@ A simple learning tool for YFX0060 exam that checks your written answers with AI
 
 Written in pure Typescript and HTML. Used Tailwind and Express.js.
 
+## Prerequisites
+
+- Node
+- npm
+
+Install prerequisites yourself.
+
 ## Setup
 
 Create `.env` file:
