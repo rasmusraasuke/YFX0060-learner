@@ -5,13 +5,20 @@ const router = Router();
 const flashcardService = new FlashcardService();
 
 router.get("/cards", (req: Request, res: Response) => {
-  const count = req.query.count ? parseInt(req.query.count as string) : null;
+  const mode = req.query.mode as string;
+  const variant = req.query.variant ? parseInt(req.query.variant as string) : null;
 
-  if (count === null) {
-    return res.json(flashcardService.getAllFlashcards());
+  if (mode === 'variant' && variant) {
+    const cards = flashcardService.getVariantFlashcards(variant);
+    return res.json({ cards, currentTicket: null });
   }
 
-  res.json(flashcardService.getRandomFlashcards(count));
+  if (mode === 'random') {
+    const result = flashcardService.getRandomTicket();
+    return res.json({ cards: result.cards, currentTicket: result.ticket });
+  }
+
+  res.status(400).json({ error: "Invalid mode or variant" });
 });
 
 router.post("/check-answer", async (req: Request, res: Response) => {

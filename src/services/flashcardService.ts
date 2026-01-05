@@ -11,7 +11,6 @@ interface ClaudeResponse {
   content: ClaudeContent[];
 }
 
-
 export class FlashcardService {
   private flashcards: Flashcard[] = [];
 
@@ -30,17 +29,26 @@ export class FlashcardService {
     }
   }
 
-  getRandomFlashcards(count: number): Flashcard[] {
-    if (count >= this.flashcards.length) {
-      return [...this.flashcards];
-    }
-
-    const shuffled = [...this.flashcards].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
+  getVariantFlashcards(variant: number): Flashcard[] {
+    const variantCards = this.flashcards
+      .filter((card) => card.variant === variant)
+      .sort((a, b) => a.ticket - b.ticket);
+    
+    return variantCards;
   }
 
-  getAllFlashcards(): Flashcard[] {
-    return [...this.flashcards];
+  getRandomTicket(): { cards: Flashcard[], ticket: number } {
+    const tickets = [...new Set(this.flashcards.map(card => card.ticket))];
+    const randomTicket = tickets[Math.floor(Math.random() * tickets.length)];
+    
+    const variants = [1, 2, 3];
+    const randomVariant = variants[Math.floor(Math.random() * variants.length)];
+    
+    const cards = this.flashcards.filter(
+      card => card.ticket === randomTicket && card.variant === randomVariant
+    );
+    
+    return { cards, ticket: randomTicket };
   }
 
   async checkAnswer(

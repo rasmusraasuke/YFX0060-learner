@@ -11,9 +11,12 @@
             <div class="max-w-3xl mx-auto">
                 <!-- Header -->
                 <div class="flex justify-between items-center mb-8">
-                    <h1 class="text-3xl font-bold text-gray-800">
-                        ⚛️ YFX0060 Õppija ⚛️
-                    </h1>
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-800">
+                            ⚛️ YFX0060 Õppija ⚛️
+                        </h1>
+                        <p id="session-info" class="text-sm text-gray-600 mt-1"></p>
+                    </div>
                     <a
                         href="/"
                         class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition duration-200"
@@ -65,7 +68,7 @@
                             id="answer"
                             rows="4"
                             class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-200"
-                            placeholder="Type your answer here..."
+                            placeholder="Kirjuta oma vastus siia..."
                         ></textarea>
                     </div>
 
@@ -105,10 +108,16 @@
             let flashcards = [];
             let currentIndex = 0;
             let userAnswers = [];
+            let sessionMode = '';
+            let sessionVariant = '';
+            let currentTicket = '';
 
             function init() {
                 const stored = localStorage.getItem("flashcards");
                 const storedIndex = localStorage.getItem("currentIndex");
+                sessionMode = localStorage.getItem("sessionMode") || '';
+                sessionVariant = localStorage.getItem("sessionVariant") || '';
+                currentTicket = localStorage.getItem("currentTicket") || '';
 
                 if (!stored) {
                     window.location.href = "/";
@@ -119,7 +128,19 @@
                 currentIndex = parseInt(storedIndex || "0");
                 userAnswers = new Array(flashcards.length).fill(null);
 
+                updateSessionInfo();
                 displayCard();
+            }
+
+            function updateSessionInfo() {
+                const sessionInfo = document.getElementById("session-info");
+                
+                if (sessionMode === 'variant') {
+                    const card = flashcards[currentIndex];
+                    sessionInfo.textContent = `Variant ${sessionVariant} | Pilet ${card.ticket}`;
+                } else if (sessionMode === 'random') {
+                    sessionInfo.textContent = `Pilet ${currentTicket}`;
+                }
             }
 
             function displayCard() {
@@ -148,6 +169,7 @@
                     feedback.classList.add("hidden");
                 }
 
+                updateSessionInfo();
                 localStorage.setItem("currentIndex", currentIndex.toString());
             }
 
@@ -157,7 +179,7 @@
                     .value.trim();
 
                 if (!answerText) {
-                    alert("Please enter an answer!");
+                    alert("Palun sisesta vastus!");
                     return;
                 }
 
@@ -188,7 +210,7 @@
                 } catch (error) {
                     console.error("Error checking answer:", error);
                     alert(
-                        "Vastuse Kontrollimisel läks midagi valesti. Proovi uuesti.",
+                        "Vastuse kontrollimisel läks midagi valesti. Proovi uuesti.",
                     );
                 } finally {
                     submitBtn.disabled = false;
