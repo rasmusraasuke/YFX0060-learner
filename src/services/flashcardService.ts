@@ -87,9 +87,9 @@ export class FlashcardService {
               Õige vastus: ${card.answer}
               Kasutaja vastus: ${userAnswer}
               
+              Sa PEAD vastama SINA vormis, näiteks: "Su vastus on õige" või "Su vastuses on vale see ja teine".
+              
               Palun otsusta, kas kasutaja vastus on korrektne, osaliselt korrektne või vale.
- 
-              Vasta sina vormis: "Su vastus on õige" või "Su vastuses on vale see ja teine".
               
               Vasta AINULT JSON objektiga selles kindlas formaadis (ei markdown ja ei backtickid):
               
@@ -97,9 +97,12 @@ export class FlashcardService {
               "state": "correct" | "partially_correct" | "incorrect",
               "description": "Lühike seletus, mis on valesti, kui midagi oli valesti ja kui vastus on õige, siis lihtsalt vasta, et antud vastus on õige"
               }
+              
+              Kui kasutaja on kirjutanud midagi juurde, mida õiges vastuses pole, siis kindlasti kontrolli oma teadmistega, kas see on õige!
+              Kirjavead too välja, aga ära sellepärast hinnet maha võta!
 
               Reeglid:
-              - "correct": Vastus annab õige mõtte edasi, isegi kui on sõnastatud teisiti. (Kirjavead ei loe, aga too need välja kindlasti)
+              - "correct": Vastus annab õige mõtte edasi, isegi kui on sõnastatud teisiti.
               - "partially_correct": Vastus on kohati õige või omab õigeid elemente, aga ei ole täiesti õige.
               - "incorrect": Vastus on vale või ei saa peamisele mõttele pihta`,
             },
