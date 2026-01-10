@@ -15,14 +15,26 @@
                         <h1 class="text-3xl font-bold text-gray-800">
                             ⚛️ YFX0060 Õppija ⚛️
                         </h1>
-                        <p id="session-info" class="text-sm text-gray-600 mt-1"></p>
+                        <p
+                            id="session-info"
+                            class="text-sm text-gray-600 mt-1"
+                        ></p>
                     </div>
-                    <a
-                        href="/"
-                        class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition duration-200"
-                    >
-                        Tagasi
-                    </a>
+                    <div class="flex gap-2">
+                        <button
+                            id="new-ticket-btn"
+                            onclick="rerollTicket()"
+                            class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg transition duration-200 hidden"
+                        >
+                            Uus Pilet
+                        </button>
+                        <a
+                            href="/"
+                            class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition duration-200"
+                        >
+                            Tagasi
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Progress Bar -->
@@ -108,16 +120,16 @@
             let flashcards = [];
             let currentIndex = 0;
             let userAnswers = [];
-            let sessionMode = '';
-            let sessionVariant = '';
-            let currentTicket = '';
+            let sessionMode = "";
+            let sessionVariant = "";
+            let currentTicket = "";
 
             function init() {
                 const stored = localStorage.getItem("flashcards");
                 const storedIndex = localStorage.getItem("currentIndex");
-                sessionMode = localStorage.getItem("sessionMode") || '';
-                sessionVariant = localStorage.getItem("sessionVariant") || '';
-                currentTicket = localStorage.getItem("currentTicket") || '';
+                sessionMode = localStorage.getItem("sessionMode") || "";
+                sessionVariant = localStorage.getItem("sessionVariant") || "";
+                currentTicket = localStorage.getItem("currentTicket") || "";
 
                 if (!stored) {
                     window.location.href = "/";
@@ -130,16 +142,61 @@
 
                 updateSessionInfo();
                 displayCard();
+
+                if (sessionMode === "random") {
+                    document
+                        .getElementById("new-ticket-btn")
+                        .classList.remove("hidden");
+                }
             }
 
             function updateSessionInfo() {
                 const sessionInfo = document.getElementById("session-info");
-                
-                if (sessionMode === 'variant') {
+
+                if (sessionMode === "variant") {
                     const card = flashcards[currentIndex];
                     sessionInfo.textContent = `Variant ${sessionVariant} | Pilet ${card.ticket}`;
-                } else if (sessionMode === 'random') {
+                } else if (sessionMode === "random") {
                     sessionInfo.textContent = `Pilet ${currentTicket}`;
+                }
+            }
+
+            async function rerollTicket() {
+                if (sessionMode !== "random") return;
+
+                const newTicketBtn = document.getElementById("new-ticket-btn");
+                newTicketBtn.disabled = true;
+                newTicketBtn.textContent = "Laadin...";
+
+                try {
+                    const url = `/api/cards?mode=random&excludeTicket=${currentTicket}`;
+                    const response = await fetch(url);
+                    const data = await response.json();
+
+                    if (!data.cards || data.cards.length === 0) {
+                        alert("Pole rohkem pileteid!");
+                        return;
+                    }
+
+                    flashcards = data.cards;
+                    currentIndex = 0;
+                    userAnswers = new Array(flashcards.length).fill(null);
+                    currentTicket = data.currentTicket;
+
+                    localStorage.setItem(
+                        "flashcards",
+                        JSON.stringify(flashcards),
+                    );
+                    localStorage.setItem("currentIndex", "0");
+                    localStorage.setItem("currentTicket", currentTicket);
+
+                    displayCard();
+                } catch (error) {
+                    console.error("Error fetching new ticket:", error);
+                    alert("Uue pileti laadimisel läks midagi valesti!");
+                } finally {
+                    newTicketBtn.disabled = false;
+                    newTicketBtn.textContent = "Uus Pilet";
                 }
             }
 

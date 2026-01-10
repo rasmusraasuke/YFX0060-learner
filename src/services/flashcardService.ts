@@ -37,10 +37,20 @@ export class FlashcardService {
     return variantCards;
   }
 
-  getRandomTicket(): { cards: Flashcard[], ticket: number } {
+  getRandomTicket(excludeTicket?: number): { cards: Flashcard[], ticket: number } {
     const tickets = [...new Set(this.flashcards.map(card => card.ticket))];
-    const randomTicket = tickets[Math.floor(Math.random() * tickets.length)];
     
+    const availableTickets = excludeTicket 
+      ? tickets.filter(t => t !== excludeTicket)
+      : tickets;
+    
+    if (availableTickets.length === 0) {
+      const randomTicket = tickets[Math.floor(Math.random() * tickets.length)];
+      const cards = this.flashcards.filter(card => card.ticket === randomTicket);
+      return { cards, ticket: randomTicket };
+    }
+    
+    const randomTicket = availableTickets[Math.floor(Math.random() * availableTickets.length)];
     const cards = this.flashcards.filter(card => card.ticket === randomTicket);
     
     return { cards, ticket: randomTicket };
