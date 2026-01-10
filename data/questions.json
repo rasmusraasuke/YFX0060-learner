@@ -147,52 +147,136 @@
     "answer": "Pooljuhtides (näiteks räni, germaanium) on kristallvõres iga aatom seotud naaberaatomitega kovalentse keemilise sideme kaudu - st igal aatomil on elektrone 'puudu', aga kui nad neid elektrone omavahel paari teise aatomiga 'jagavad', siis on nad mõlemad stabiilses olekus. Kuna selliselt paiknevad elektronid on aatomitega nõrgalt seotud, siis soojusliikumise tõttu võidakse mõni neist oma orbiidilt välja lüüa ja ta muutub vabaks elektroniks. Elektroni poolt vabastatud koht - auk - hakkab käituma positiivse laenguna. Et selle koha võib juhuslikult täita mõni naaberpaari elektron, siis võib auk samamoodi kristallis ringi liikuda nagu vaba elektron. Seega on vabadeks laengukandjateks pooljuhtides vabad elektronid ja augud."
   },
   {
-      "id": 22,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige energia",
-      "answer": "Energia on keha võime teha tööd. Ühik 1J. Mehaaniline energia jaguneb kineetiliseks ja potentsiaalseks energiaks."
-    },
-    {
-      "id": 23,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige kineetiline energia ja tuletage valem selle arvutamiseks",
-      "answer": "Kineetiline energia on energia, mida keha omab oma liikumise tõttu. Võrdub tööga, mis kulub selle keha täielikuks peatamiseks. Tuletuskäik: Leiame, kui palju tööd tuleks teha liikuva keha peatamiseks. Tehtud töö on teatavasti A = Fs, ning Newtoni II seaduse järgi F = ma, kusjuures kuna meil on pidurdamine siis A = −mas. Oletame et see pidurdamine toimub konstantse kiirendusega, seega pidurdamiseks kulunud teepikkus on s = v₀t + at²/2. Pidurdamiseks kulunud aja saame: v = 0 = v₀ + at ⟹ t = −v₀/a. Asendame eelmisesse valemisse: s = −v₀²/a + v₀²/2a ⟹ s = −v₀²/2a. Asendame algsesse valemisse ning saame A = mv₀²/2 ning vastavalt definitsioonile A = Eₖ ning Eₖ = mv²/2."
-    },
-    {
-      "id": 24,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige potentsiaalne energia ja tuletage selle arvutusvalem elastselt deformeeritud keha korral",
-      "answer": "Potentsiaalne energia on energia, mis kehal on tema asendi tõttu. Võrdub tööga, mis kulub keha viimiseks sellesse asendisse. Tuletuskäik: Ühest otsast kinnitatud vedru hakatakse lahtisest otsast venitama. Hooke'i seaduse järgi mõjub kehale elastsusjõud Fₑₗ = kx, kus k on vedru jäikus ja x deformatsiooni pikkus. Tehtud töö on teatavasti A = Fs, kusjuures s = x. Aga kuna F ei ole konstantne, siis peame integreerima. A = ∫₀ˣ(Fₑₗ)dx = ∫₀ˣ(kx)dx = [kx²/2]₀ˣ = kx²/2. Vastavalt definitsioonile A = Eₚ ning Eₚ = kx²/2, kus k on keha jäikus ja x deformatsiooni pikkus."
-    },
-    {
-      "id": 25,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige konservatiivne jõud ja tooge kaks näidet",
-      "answer": "Konservatiivne jõud on jõud, mille vastu keha liigutamiseks tehtud töö avaldub valemiga A = Eₚ − Eₚ₀ = ΔEₚ. Konservatiivne jõud sõltub ainult keha koordinaatidest, ning töö keha liigutamisel konservatiivse jõu vastu ei sõltu keha trajektoorist. Konservatiivsed jõud on näiteks elastsusjõud ja gravitatsioonijõud."
-    },
-    {
-      "id": 26,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige suletud süsteem",
-      "answer": "Suletud süsteem on süsteem, millele kas ei mõju väliseid jõude või need jõud tasakaalustavad üksteist. Samuti ei toimu aine ülekandumist süsteemi ja ümbritseva keskkonna vahel."
-    },
-    {
-      "id": 27,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Sõnastage mehaanilise energia jäävuse seadus ja kirjutage vastav valem",
-      "answer": "Kui suletud süsteemile ei mõju dissipatiivseid jõude ja seal ei ole mitteelastseid deformatsioone, siis selle süsteemi koguenergia on jääv. ∑F⃗ᵥₑₗᵢₛ = 0 & ∑F⃗ₐᵢₛₛ = 0 ⟹ ∑ⁿᵢ₌₁(Eₖ₀ᵢ + Eₚ₀ᵢ) = ∑ⁿᵢ₌₁(Eₖᵢ + Eₚᵢ)"
-    },
-    {
-      "id": 28,
-      "ticket": 4,
-      "variant": 2,
-      "question": "Defineerige skalaarse suuruse gradient ja kirjutage vastav valem",
-      "answer": "Skalaarse suuruse gradient on vektor, mille projektsioonid on selle skalaarse suuruse osatuletised vastavate koordinaatide järgi (näitab selle skalaarse suuruse kõige kiirema kasvu suunda). grad A = i⃗∂A/∂x + j⃗∂A/∂y + k⃗∂A/∂z"
-    }
+    "id": 22,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige energia",
+    "answer": "Energia on keha võime teha tööd. Ühik 1J. Mehaaniline energia jaguneb kineetiliseks ja potentsiaalseks energiaks."
+  },
+  {
+    "id": 23,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige kineetiline energia ja tuletage valem selle arvutamiseks",
+    "answer": "Kineetiline energia on energia, mida keha omab oma liikumise tõttu. Võrdub tööga, mis kulub selle keha täielikuks peatamiseks. Tuletuskäik: Leiame, kui palju tööd tuleks teha liikuva keha peatamiseks. Tehtud töö on teatavasti A = Fs, ning Newtoni II seaduse järgi F = ma, kusjuures kuna meil on pidurdamine siis A = −mas. Oletame et see pidurdamine toimub konstantse kiirendusega, seega pidurdamiseks kulunud teepikkus on s = v₀t + at²/2. Pidurdamiseks kulunud aja saame: v = 0 = v₀ + at ⟹ t = −v₀/a. Asendame eelmisesse valemisse: s = −v₀²/a + v₀²/2a ⟹ s = −v₀²/2a. Asendame algsesse valemisse ning saame A = mv₀²/2 ning vastavalt definitsioonile A = Eₖ ning Eₖ = mv²/2."
+  },
+  {
+    "id": 24,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige potentsiaalne energia ja tuletage selle arvutusvalem elastselt deformeeritud keha korral",
+    "answer": "Potentsiaalne energia on energia, mis kehal on tema asendi tõttu. Võrdub tööga, mis kulub keha viimiseks sellesse asendisse. Tuletuskäik: Ühest otsast kinnitatud vedru hakatakse lahtisest otsast venitama. Hooke'i seaduse järgi mõjub kehale elastsusjõud Fₑₗ = kx, kus k on vedru jäikus ja x deformatsiooni pikkus. Tehtud töö on teatavasti A = Fs, kusjuures s = x. Aga kuna F ei ole konstantne, siis peame integreerima. A = ∫₀ˣ(Fₑₗ)dx = ∫₀ˣ(kx)dx = [kx²/2]₀ˣ = kx²/2. Vastavalt definitsioonile A = Eₚ ning Eₚ = kx²/2, kus k on keha jäikus ja x deformatsiooni pikkus."
+  },
+  {
+    "id": 25,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige konservatiivne jõud ja tooge kaks näidet",
+    "answer": "Konservatiivne jõud on jõud, mille vastu keha liigutamiseks tehtud töö avaldub valemiga A = Eₚ − Eₚ₀ = ΔEₚ. Konservatiivne jõud sõltub ainult keha koordinaatidest, ning töö keha liigutamisel konservatiivse jõu vastu ei sõltu keha trajektoorist. Konservatiivsed jõud on näiteks elastsusjõud ja gravitatsioonijõud."
+  },
+  {
+    "id": 26,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige suletud süsteem",
+    "answer": "Suletud süsteem on süsteem, millele kas ei mõju väliseid jõude või need jõud tasakaalustavad üksteist. Samuti ei toimu aine ülekandumist süsteemi ja ümbritseva keskkonna vahel."
+  },
+  {
+    "id": 27,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Sõnastage mehaanilise energia jäävuse seadus ja kirjutage vastav valem",
+    "answer": "Kui suletud süsteemile ei mõju dissipatiivseid jõude ja seal ei ole mitteelastseid deformatsioone, siis selle süsteemi koguenergia on jääv. ∑F⃗ᵥₑₗᵢₛ = 0 & ∑F⃗ₐᵢₛₛ = 0 ⟹ ∑ⁿᵢ₌₁(Eₖ₀ᵢ + Eₚ₀ᵢ) = ∑ⁿᵢ₌₁(Eₖᵢ + Eₚᵢ)"
+  },
+  {
+    "id": 28,
+    "ticket": 4,
+    "variant": 2,
+    "question": "Defineerige skalaarse suuruse gradient ja kirjutage vastav valem",
+    "answer": "Skalaarse suuruse gradient on vektor, mille projektsioonid on selle skalaarse suuruse osatuletised vastavate koordinaatide järgi (näitab selle skalaarse suuruse kõige kiirema kasvu suunda). grad A = i⃗(∂A/∂x) + j⃗(∂A/∂y) + k⃗(∂A/∂z)"
+  },
+  {
+    "id": 29,
+    "ticket": 5,
+    "variant": 2,
+    "question": "Defineerige pinge, potentsiaalide vahe ja elektromotoorjõud",
+    "answer": "Pingeks (U) kahe punkti vahel nimetatakse summaarset tööd, mis tehakse laengu 1C viimiseks ühest punktist teise. Potentsiaalide vaheks (Δφ) kahe punkti vahel nimetatakse elektriliste jõudude poolt tehtud tööd, mis tehakse laengu 1 kulon viimiseks ühest punktist teise. Elektromotoorjõuks (ε) kahe punkti vahel nimetatakse mitteelektriliste jõudude poolt tehtud tööd, mis tehakse laengu 1 kulon viimiseks ühest punktist teise. Nende kõigi ühik on 1 volt."
+  },
+  {
+    "id": 30,
+    "ticket": 5,
+    "variant": 2,
+    "question": "Sõnastage üldistatud Ohmi seadus, tuletage valem ja tehke joonis selgitustega",
+    "answer": "Pinge vooluahela otstel (ahela kogutakistuse ja ahelat läbiva voolu tugevuse korrutis) võrdub ahela otstele rakendatud potentsiaalide vahe ja ahelas sisalduvate elektromotoorjõudude summaga. Tuletuskäik: Üritame liigutada mingit laengut q vooluahela ühest otsast teise. Selleks tehtud summaarne töö A∑ on võrdne elektriliste jõudude töö Aₑ ja mitteelektriliste jõudude töö Aₘₑ kogusummaga: A∑ = Aₑ + Aₘₑ. Asendame eelmise punkti definitsioonidest: qU = qΔφ + qε | :q ⟹ U = Δφ + ε. Lisaks teame Ohmi seadusest suletud vooluringi kohta, et U = I(R + r), seega saamegi: U = I(R + r) = φ₁ − φ₂ + ε"
+  },
+  {
+    "id": 31,
+    "ticket": 5,
+    "variant": 2,
+    "question": "Sõnastage Ohmi seadus suletud vooluringis, kirjutage valem ja tehke joonis selgitustega",
+    "answer": "Vooluringi läbiva voolu tugevuse korrutis tarbija takistuse ja elektromotoorjõu allika sisetakistuse summaga võrdub elektromotoorjõuga vooluringis. I(R + r) = ε. Kuna vooluringi 'otspunktid' ühtivad, siis eeldatavasti on ka nende potentsiaalid võrdsed, seega kaob üldistatud Ohmi seadusest φ₁ − φ₂."
+  },
+  {
+    "id": 32,
+    "ticket": 5,
+    "variant": 2,
+    "question": "Tuletage Kirchoffi esimene seadus valemi kujul, sõnastage see, tehke joonis selgitustega",
+    "answer": "Vooluringi igasse sõlme sisenevate voolude summa võrdub sellest sõlmest väljuvate voolude summaga. Tuletuskäik: Vastavalt elektrilaengu jäävuse seadusele qₛᵢₛₛₑ = qᵥₐₗⱼₐ, seega ∑Iₛᵢₛₛₑt = ∑Iᵥₐₗⱼₐt. Kuna sõlmedes laengute kuhjumine pole võimalik, siis ∑Iₛᵢₛₛₑ = ∑Iᵥₐₗⱼₐ."
+  },
+  {
+    "id": 33,
+    "ticket": 5,
+    "variant": 2,
+    "question": "Tuletage Kirchoffi teine seadus valemi kujul, sõnastage see",
+    "answer": "Suletud vooluahelas asuvate elektromotoorjõu allikate elektromotoorjõudude algebraline summa võrdub kõigil selles ahelas sisalduvatel tarbijatel ja elektromotoorjõu allikatel olevate pingelangude algebralise summaga. ∑ⁿᵢ₌₁εᵢ = ∑ⁿᵢ₌₁iᵢrᵢ + ∑ᵐⱼ₌₁IⱼRⱼ. Siinkohal εᵢ on i-nda elektromotoorjõu allika elektromotoorjõud, iᵢ teda läbiva voolu tugevus ja rᵢ tema sisetakistus. Iⱼ on j-ndat tarbijat läbiva voolu tugevus ja Rⱼ tema takistus. Tuletuskäik: Joule'i-Lenzi seadus: Q = UIt. Laengu definitsioonist: q = It. Kokku pannes: Q = qU. Asendame Ohmi seadusest U: Q = qIR. Summaarne soojushulk kõigil tarbijatel ja elektromotoorjõu allikatel ahelas on seega: Q = q(∑ⁿᵢ₌₁iᵢrᵢ + ∑ᵐⱼ₌₁IⱼRⱼ). Selle laengu läbi suletud ahela viimiseks kulunud töö tehakse elektromotoorjõu allikates sisalduva energia arvelt. Vastavalt elektromotoorjõu definitsioonile A = q(∑ⁿᵢ₌₁εᵢ). Energia jäävuse seaduse tõttu A = Q, seega saamegi ∑ⁿᵢ₌₁εᵢ = ∑ⁿᵢ₌₁iᵢrᵢ + ∑ᵐⱼ₌₁IⱼRⱼ"
+  },
+  {
+    "id": 34,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Sõnastage valguse sirgjoonelise levimise seadus",
+    "answer": "Geomeetrilise optika esimene seadus. Homogeenses keskkonnas levib valgus sirgjooneliselt. Esineb kõrvalekaldeid: valguskiir muudab oma suunda gravitatsioonivälja mõjul, nt suure massiga taevakehast möödudes."
+  },
+  {
+    "id": 35,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Sõnastage peegeldumisseadus, kirjutage valem, tehke joonis selgitustega",
+    "answer": "Geomeetrilise optika teine seadus. Valguse langemisnurk võrdub peegeldumisnurgaga, kusjuures langev kiir, peegeldunud kiir ja pinnanormaal asuvad ühel tasandil. α = β, kus α on langemisnurk ja β on peegeldumisnurk."
+  },
+  {
+    "id": 36,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Sõnastage murdumisseadus, kirjutage valem, tehke joonis selgitustega",
+    "answer": "Geomeetrilise optika kolmas seadus. Valguse murdumisseadus. Ühest keskkonnast teise levides muudab valguse nende keskkondade lahutuspindadel suunda, kusjuures langev kiir, murdunud kiir ja pinnanormaal asuvad ühel tasandil. n₁sinα = n₂sinγ, kus n₁ on esimese keskkonna murdumisnäitaja, n₂ on teise keskkonna murdumisnäitaja, α on langemisnurk ja γ on murdumisnurk."
+  },
+  {
+    "id": 37,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Defineerige murdumisnäitaja, optiliselt tihe ja optiliselt hõre keskkond",
+    "answer": "Keskkonna murdumisnäitaja näitab, kui palju on valguse kiirus selles keskkonnas väiksem valguse kiirusest vaakumis: n = c/v. Optiliselt tihe keskkond on aine, milles valguse kiirus on väiksem ja murdumisnäitaja seega suurem. Optiliselt hõre keskkond on aine, milles valguse kiirus on suurem ja murdumisnäitaja seega väiksem. Hõredamast tihedasse liikudes murdub valgus pinnanormaali poole (α > γ). Tihedamast hõredamasse liikudes murdub valgus pinnanormaalist kaugemale (α < γ)."
+  },
+  {
+    "id": 38,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Tuletage valem täieliku peegeldumise piirnurga arvutamiseks",
+    "answer": "Täielik peegeldumine on nähtus, mille korral optilisest tihedamast keskkonnast optiliselt hõredamasse keskkonda leviv valgus peegeldub lahutuspinnalt täielikult tagasi. Täieliku peegeldumise piirnurk on minimaalne langemisnurk, mille korral täielik peegeldumine toimub. Tuletus: vaatleme olukorda, kus valgus levib optiliselt tihedamast keskkonnast hõredamasse keskkonda (n₁ > n₂). Murdumisnurga siinus: n₁sinα = n₂sinγ, seega sinγ = (n₁/n₂)sinα. Kuna n₁ > n₂, siis sinγ > sinα. Kui sinγ > 1 (α kasvades), mis on reaalse nurgaga võimatu, siis hoopis peegeldub valgus esimesse keskkonda tagasi. Seega piirnurk on αₖᵣ = arcsin(n₂/n₁)."
+  },
+  {
+    "id": 39,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Sõnastage Fermat' printsiip",
+    "answer": "Valgus levib ühest ruumipunktist teise alati niisugust teed mööda, et tema levimise aeg oleks ekstremaalne (minimaalne)."
+  },
+  {
+    "id": 40,
+    "ticket": 6,
+    "variant": 2,
+    "question": "Tuletage murdumisseadus Fermat' printsiibist, tehke joonis selgitustega",
+    "answer": "Valgusosakesel on ülesanne minna punktist A punkti B. Punktis A on murdumisnäitaja n₁, punktis B n₂. Keskkondade lahutuspinnal läbib valgus punkti O, mille asukohta me ei tea. Lühima teepikkuse AO kirjeldab Pythagorase teoreem s₁ = √(x₁² + y₁²). Lühima teepikkuse OB kirjeldab Pythagorase teoreem s₂ = √((x − x₁)² + y₂²). Valguse kiirus esimeses ja teises keskkonnas: v₁ = c/n₁, v₂ = c/n₂. Kuna v = s/t ⟹ t = s/v, siis t = sn/c. Ajakulu, mida Fermat' printsiibist tulenevalt valgus püüab minimeerida, on kahes keskkonnas: t₁ = n₁√(x₁² + y₁²)/c ja t₂ = n₂√((x − x₁)² + y₂²)/c. Koguaeg t = t₁ + t₂. x₁ on ainuke tundmatu t arvutamisel, kuna O asukohta me ei tea. Võtame t tuletise x₁ järgi, et leida ekstreemum: dt/dx₁ = (n₁x₁)/(c√(x₁² + y₁²)) − (n₂(x − x₁))/(c√((x − x₁)² + y₂²)) = 0. See annab: n₁x₁/√(x₁² + y₁²) = n₂(x − x₁)/√((x − x₁)² + y₂²). Kuna x₁/√(x₁² + y₁²) = sinα ja (x − x₁)/√((x − x₁)² + y₂²) = sinγ, saame n₁sinα = n₂sinγ, mis ongi murdumisseadus."
+  }
 ]
