@@ -41,12 +41,7 @@ export class FlashcardService {
     const tickets = [...new Set(this.flashcards.map(card => card.ticket))];
     const randomTicket = tickets[Math.floor(Math.random() * tickets.length)];
     
-    const variants = [1, 2, 3];
-    const randomVariant = variants[Math.floor(Math.random() * variants.length)];
-    
-    const cards = this.flashcards.filter(
-      card => card.ticket === randomTicket && card.variant === randomVariant
-    );
+    const cards = this.flashcards.filter(card => card.ticket === randomTicket);
     
     return { cards, ticket: randomTicket };
   }
