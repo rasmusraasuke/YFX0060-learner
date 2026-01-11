@@ -74,7 +74,7 @@
     "ticket": 2,
     "variant": 1,
     "question": "Isotermiline protsess - definitsioon, valem, näide, graafik",
-    "answer": "Isotermiline protsess on protsess, mille käigus ei muutu gaasi temperatuur. pV = mRT/μ = const. Näiteks gaasi aeglane kokkusurumine silindris, mille seinad juhivad hästi soojust. Tegemist on pöördvõrdelise sõltuvusega, mille graafik (x-teljel V , y-teljel P) on parabool."
+    "answer": "Isotermiline protsess on protsess, mille käigus ei muutu gaasi temperatuur. pV = mRT/μ = const. Näiteks gaasi aeglane kokkusurumine silindris, mille seinad juhivad hästi soojust. Tegemist on pöördvõrdelise sõltuvusega, mille graafik (x-teljel V , y-teljel P) on hüperbool."
   },
   {
     "id": 12,
